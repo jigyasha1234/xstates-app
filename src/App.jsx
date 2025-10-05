@@ -100,8 +100,7 @@ function App() {
             return <option key={city} value={city}>{city}</option>
           })}
         </select>
-        {city && state && country && (<div style={{fontSize: "20px", marginTop: "20px"}}> <b>You selected {country}</b>, {state}, {city} </div>)}
-        
+        {city && (<div style={{fontSize: "20px", marginTop: "20px"}}> <b style={{fontWeight: 600}}>You selected {city}</b>, {state}, {country} </div>)}        
       </div>
     </>
   )
